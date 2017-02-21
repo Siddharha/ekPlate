@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/llUserReviewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="25dip"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ekplate.android.views.CircularImageView
+                android:id="@+id/civImageUserReviewVendorDetails"
+                android:layout_width="45dip"
+                android:layout_height="45dip"/>
+
+            <com.ekplate.android.views.BariolItalicTextView
+                android:id="@+id/tvNameUserReviewVendorDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angelina D'Souza"
+                android:textColor="#4E4F53"
+                android:layout_marginLeft="10dip"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="4dip"
+            android:orientation="horizontal">
+
+            <com.ekplate.android.views.BariolRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATED"/>
+
+            <LinearLayout
+                android:id="@+id/llRatingUserReviewVendorDetails"
+                android:layout_width="45dip"
+                android:layout_height="22dip"
+                android:background="@drawable/round_rating_four_layout_bg"
+                android:gravity="center"
+                android:layout_marginLeft="4dip">
+
+                <com.ekplate.android.views.BariolLightTextView
+                    android:id="@+id/tvRatingUserReviewVendorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.0"
+                    android:textColor="@android:color/white"
+                    />
+
+            </LinearLayout>
+
+            <com.ekplate.android.views.BariolItalicTextView
+                android:id="@+id/llLastSeenUserReviewVendorDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[last visit on:June15, 2015]"
+                android:textColor="#4D606F"
+                android:layout_marginLeft="4dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dip">
+
+            <com.ekplate.android.views.BariolLightTextView
+                android:id="@+id/llReviewUserReviewVendorDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testing design. Testing design. Testing design.
+                 Testing design."
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textColor="#5D6871"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dip">
+
+            <LinearLayout
+                android:layout_width="34dip"
+                android:layout_height="34dip"
+                android:background="@drawable/round_green_agreed_bg"
+                android:gravity="center">
+
+                <com.ekplate.android.views.BariolLightTextView
+                    android:id="@+id/tvAgreedUserReviewVendorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+            <com.ekplate.android.views.BariolRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agreed"
+                android:textColor="#4E4F53"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                />
+
+            <FrameLayout
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                ></FrameLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvBtnAgreedUserReviewVendorDetails"
+                android:layout_width="115dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/round_corners_side_option_bg"
+                card_view:cardBackgroundColor="#FEBE10"
+                card_view:cardElevation="3dip"
+                card_view:cardCornerRadius="4dp">
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="I AGREE"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@android:color/darker_gray"></LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="25dip"
+        android:paddingBottom="35dip"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ekplate.apk.views.CircularImageView
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:src="@drawable/icon_profile_avt"/>
+
+            <com.ekplate.apk.views.BariolItalicTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angelina D'Souza"
+                android:textColor="#4E4F53"
+                android:layout_marginLeft="10dip"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="4dip"
+            android:orientation="horizontal">
+
+            <com.ekplate.apk.views.BariolRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATED"
+                />
+
+            <LinearLayout
+                android:layout_width="45dip"
+                android:layout_height="22dip"
+                android:gravity="center"
+                android:background="@drawable/round_rating_three_layout_bg"
+                android:layout_marginLeft="4dip">
+
+                <com.ekplate.apk.views.BariolLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.0"
+                    android:textColor="@android:color/white"
+                    />
+
+            </LinearLayout>
+
+            <com.ekplate.apk.views.BariolItalicTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[last visit on:June15, 2015]"
+                android:textColor="#4D606F"
+                android:layout_marginLeft="4dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dip">
+            <com.ekplate.apk.views.BariolLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testing design. Testing design. Testing design. Testing design."
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textColor="#5D6871"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dip">
+
+            <LinearLayout
+                android:layout_width="34dip"
+                android:layout_height="34dip"
+                android:background="@drawable/round_green_agreed_bg"
+                android:gravity="center">
+
+                <com.ekplate.apk.views.BariolLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+            <com.ekplate.apk.views.BariolRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agreed"
+                android:textColor="#4E4F53"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                />
+
+            <FrameLayout
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                ></FrameLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="115dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/round_corners_side_option_bg"
+                card_view:cardBackgroundColor="#FEBE10"
+                card_view:cardElevation="3dip"
+                card_view:cardCornerRadius="4dp">
+
+                <com.ekplate.apk.views.BariolRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="I AGREE"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+
+</LinearLayout>

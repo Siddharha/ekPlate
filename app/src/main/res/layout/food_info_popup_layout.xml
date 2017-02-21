@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner_black_bg"
+    android:id="@+id/llPopupWindow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="right"
+        android:background="@color/primary"
+        android:padding="5dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ivPopupCross"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <com.ekplate.android.views.BariolBoldTextView
+                android:id="@+id/tvFoodItemName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivPopupCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_cross_icon_food"
+            android:paddingRight="4dip"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="15dip"
+        android:paddingTop="5dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ekplate.android.views.BariolRegularTextView
+                android:id="@+id/tvFoodItemDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.3"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bluehorse.ekplate.vendormodule.VendorSearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbSearchActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <SearchView
+            android:id="@+id/svTextArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="Enter search key.."
+            android:searchHintIcon="@drawable/ic_action_search"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSearchResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </android.support.v7.widget.RecyclerView>
+
+        <com.ekplate.android.views.BariolBoldTextView
+            android:id="@+id/tvNoResultFoundText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Result Found"
+            android:textSize="22sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bluehorse.ekplate.vendormodule.GallerySingleImageActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pvSingleImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/ivPreviousImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_previous_item"
+        android:layout_centerVertical="true"
+        android:padding="5dip"/>
+
+    <ImageView
+        android:id="@+id/ivNextImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_next_item"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dip"/>
+
+    <include
+        android:id="@+id/tbSingeImage"
+        layout="@layout/toolbar_layout"/>
+
+</RelativeLayout>

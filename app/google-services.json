@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_id": "ekplate-1211",
+    "project_number": "715381946929",
+    "name": "Ekplate"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715381946929:android:c9a4a3d9224f25b7",
+        "client_id": "android:com.ekplate.apk",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.ekplate.apk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715381946929-ptj3gp8cgcaf0d5lc63un9hfpnhdpspm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ekplate.apk",
+            "certificate_hash": "6D98A73671CED75225D47D4200650591EBE4191B"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-73797324-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llRssFeed"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:id="@+id/ivRssFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:src="@drawable/no_media"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <com.ekplate.android.views.BariolBoldTextView
+                android:id="@+id/tvRssFeedHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="@string/social_feed_desc"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingBottom="5dip"
+                android:layout_weight="1"
+                android:layout_margin="5dp" />
+
+            <com.ekplate.android.views.BariolBoldTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_rss_description"
+                android:ellipsize="end"
+                android:lines="3"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis laoreet nunc,"
+                android:textSize="14sp"
+                android:lineSpacingMultiplier="1.2"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:minLines="3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvRssFeedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 hrs ego"
+                    android:textSize="13sp"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

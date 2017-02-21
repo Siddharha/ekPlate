@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="7dip"
+        android:layout_marginBottom="7dip"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/theme_color"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_faq_q"
+                android:layout_margin="5dp"
+                android:scaleType="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#F3F3F3"
+            android:gravity="center">
+
+            <com.ekplate.android.views.BariolBoldTextView
+                android:id="@+id/tbFaqQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:layout_marginRight="40dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgListIndicator"
+            android:layout_weight="1"
+            android:src="@drawable/icon_arrow_right_yellow"
+            android:scaleType="fitCenter"
+            android:background="#F3F3F3"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    
+    <LinearLayout
+        android:id="@+id/llNotificationItemListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7.5"
+            android:gravity="center_horizontal">
+
+            <com.ekplate.android.views.CircularImageView
+                android:id="@+id/civNotificationImage"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_marginTop="15dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:weightSum="10"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:paddingTop="15dip"
+                android:paddingRight="7dip"
+                android:paddingLeft="5dip"
+                android:paddingBottom="10dip"
+                android:orientation="vertical">
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvNotificationHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rahul das"
+                    android:textSize="18sp"
+                    android:singleLine="true"/>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvNotificationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet consectetur adipisc"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:paddingTop="15dip"
+                android:gravity="center_horizontal">
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvNotificationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 Aug"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@android:color/darker_gray"></FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/food_item_margin">
+
+        <FrameLayout
+            android:id="@+id/flFoodListItemContainer"
+            android:layout_width="match_parent"
+            android:layout_height="170dip"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/ivFoodItemFoodList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ivFoodInfoImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_about_food_list" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/back_image_gradient"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivFoodTypeFoodList"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8dip"
+                    android:src="@drawable/icon_nonveg" />
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvItemTitleFoodList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Puri Bhaji"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

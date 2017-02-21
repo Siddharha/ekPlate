@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:gravity="bottom"
+    android:paddingBottom="5dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:weightSum="10"
+        android:layout_marginRight="30dip"
+        android:layout_marginLeft="30dip">
+
+        <LinearLayout
+            android:id="@+id/llFbIconLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.25"
+            android:background="@drawable/round_button_fb_dark_gb"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:src="@drawable/fb_icon"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flFbLoginBtnLanding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:background="@drawable/round_button_fb_lite_bg"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <com.ekplate.android.views.OpenSansSemiboldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="SIGNUP WITH FACEBOOK"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dip"
+                android:textColor="@android:color/white" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

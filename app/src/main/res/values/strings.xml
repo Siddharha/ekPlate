@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">EkPlate</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_search_food">SearchFoodActivity</string>
+    <string name="title_activity_vendors">VendorsActivity</string>
+    <string name="title_activity_search_results">SearchResultActivity</string>
+
+    <string name="contact">Search Item</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- Id for social credential -->
+    <string name="fb_app_id">636521116501539</string>
+
+    <!-- Google map credential -->
+   <!-- <string name="google_api_key">AIzaSyC7RWfUbINOrXz30cE1eymyYW5hNuACimI</string>-->
+    <string name="google_api_key">AIzaSyA2fXLC9y6MuQH8buYSxF 3N20b_oACKMyQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_sliding">HomeSlidingActivity</string>
+    <string name="title_activity_vendor_details">VendorDetailsActivity</string>
+    <string name="title_activity_collage">CollageActivity</string>
+    <string name="title_activity_vegetarian_selection">VegetarianSelectionActivity</string>
+    <string name="title_activity_home_reside">HomeResideActivity</string>
+    <string name="title_activity_gaidos_pick">GaidosPickActivity</string>
+
+
+    <!-- Validation strings -->
+    <string name="testErrorStringForEmail">Please give a proper emailid</string>
+    <string name="emptyErrorString">The field is empty</string>
+    <string name="title_activity_vendor_map">VendorMapActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_gallery_single_image">GallerySingleImageActivity</string>
+    <string name="title_activity_terms_condition">TermsConditionActivity</string>
+
+    <string name="terms_condition_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis laoreet nunc, eu congue risus. Donec sodales quis dolor eu maximus. Nullam tincidunt venenatis urna, sit amet pretium est porta vel. Nullam id efficitur sapien. Ut finibus luctus urna non efficitur. Morbi eget sem et nisi bibendum suscipit at in metus. Nam vitae auctor mi.
+
+Nam placerat eget lorem nec ultrices. Donec eros augue, facilisis vitae convallis et, rutrum ac nibh. Etiam varius ultrices orci in consectetur. Nam iaculis venenatis viverra. Aenean commodo viverra vestibulum. Morbi quis eros fermentum, eleifend augue ultricies, elementum sem. Donec ac sodales dolor. Duis vitae velit ut erat ultrices congue at euismod dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vitae sapien a arcu viverra condimentum ut a metus.</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_faq">FaqActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_view_profile">ViewProfileActivity</string>
+    <string name="title_activity_help_to_eat">HelpToEatActivity</string>
+    <string name="title_activity_help_me_eat_result">HelpMeEatResultActivity</string>
+    <string name="title_activity_report_problem">ReportProblemActivity</string>
+    <string name="title_activity_help_to_improve">HelpToImproveActivity</string>
+
+    <string name="suggestion_questions">Do you have any suggestions or complains? </string>
+    <string name="title_activity_change_location">ChangeLocationActivity</string>
+    <string name="title_activity_account_setting">AccountSettingActivity</string>
+    <string name="title_activity_social_feed">SocialFeedActivity</string>
+    <string name="title_activity_write_review">WriteReviewActivity</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+    <string name="title_activity_my_story">MyStoryActivity</string>
+    <string name="title_activity_social_share">SocialShareActivity</string>
+    <string name="title_activity_change_country_location">ChangeCountryLocationActivity</string>
+    <string name="title_activity_search_vendor">SearchVendorActivity</string>
+    <string name="title_activity_question_submit_result">QuestionSubmitResultActivity</string>
+
+
+    <string name="question_success_text_faq_one">for your question,</string>
+    <string name="question_success_text_faq_two">we will get back to you as soon as we can</string>
+    <string name="question_success_text_help_to_improve_one">for your feedback</string>
+    <string name="question_success_text_help_to_improve_two">Thank you for your question, we will try our level best to get back to you as soon as possible!</string>
+    <string name="question_success_text_add_vendor_one">Your Submission is under review by our team of Foodies.</string>
+    <string name="question_success_text_add_vendor_two">Thank you for adding your Review, we will notify you as soon as the stall is live on the app</string>
+    <string name="message_on_data_found">We dont have any item for this category!</string>
+    <string name="message_on_internet_not_connection">Seems like you are not connected to the internet</string>
+    <string name="title_activity_vendor_search">VendorSearchActivity</string>
+    <string name="title_activity_my_story_comment">MyStoryCommentActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_near_vendor">NearVendorActivity</string>
+    <string name="title_activity_my_stuff">MyStuffActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_social_feed_web">SocialFeedWebActivity</string>
+    <string name="title_activity_developer_option">Developer Option Activity</string>
+    <string name="social_feed_desc">Lorem ipsum dolor sit amet, consectetur adipiscing</string>
+
+</resources>

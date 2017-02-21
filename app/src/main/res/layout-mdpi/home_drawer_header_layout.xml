@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nav_drawer_header_bg"
+        android:scaleType="centerCrop" />
+
+    <com.ekplate.android.views.CircularImageView
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="17dip"
+        android:layout_marginLeft="20dip"
+        android:src="@drawable/icon_faq_popup"/>
+
+   <!-- <TextView
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:text="Your Name Here"
+        android:textColor="@android:color/white" />-->
+
+</FrameLayout>

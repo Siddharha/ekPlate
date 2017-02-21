@@ -1,0 +1,74 @@
+[
+    {
+        "outputFile": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/D:\\android_chandan_newproject\\jockies-ekplate_android-22bb28248623\\libraries\\ResideMenu\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 399,
+                    "endColumn": 47,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/D:\\android_chandan_newproject\\jockies-ekplate_android-22bb28248623\\libraries\\ResideMenu\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 399,
+                        "endColumn": 47,
+                        "endOffset": 442
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ResideMenu/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 399,
+                    "endColumn": 47,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ResideMenu/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 399,
+                        "endColumn": 47,
+                        "endOffset": 442
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/E:\\android\\jockies-ekplate_android-22bb28248623\\libraries\\ResideMenu\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 399,
+                    "endColumn": 47,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/E:\\android\\jockies-ekplate_android-22bb28248623\\libraries\\ResideMenu\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 399,
+                        "endColumn": 47,
+                        "endOffset": 442
+                    }
+                }
+            }
+        ]
+    }
+]

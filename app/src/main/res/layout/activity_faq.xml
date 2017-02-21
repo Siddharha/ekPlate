@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bluehorse.ekplate.menumodule.FaqActivity">
+
+    <include
+        android:id="@+id/tbFaq"
+        layout="@layout/toolbar_layout"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/llFaqContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <ExpandableListView
+                android:id="@+id/exlvFaqList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:groupIndicator="@drawable/faq_list_indicator"
+                android:transcriptMode="alwaysScroll"
+                >
+
+            </ExpandableListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFaqProgressBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/theme_color"
+                android:indeterminateTintMode="src_in"/>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/llErrorThreeFaq"
+            layout="@layout/error_screen_three_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="8"
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:background="#F3F3F3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <com.ekplate.android.views.BariolBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ask your question"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dip"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etUserQuestionFaq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:background="@drawable/footer_text_box_bg"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="20" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llUserQuestionSubmitBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_rating_layout_bg"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <com.ekplate.android.views.BariolBoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SUBMIT"
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,802 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bluehorse.ekplate.vendormodule.VendorDetailsActivity">
+    <LinearLayout
+        android:id="@+id/llProgressbarVendorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/theme_color"
+            android:indeterminateTintMode="src_in"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlDetailse"
+        android:visibility="gone">
+
+        <com.nirhart.parallaxscroll.views.ParallaxScrollView
+            android:id="@+id/svMainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:parallax_factor="1.9">
+
+            <LinearLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivHeadingImageVendorDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="295dp"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="none"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#F8F9FA"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                card_view:cardBackgroundColor="#ffffff"
+                                card_view:cardCornerRadius="5dp"
+                                android:layout_gravity="left|center_vertical"
+                                android:layout_marginBottom="5dp"
+                                android:id="@+id/crAddedByVendor"
+                                android:layout_marginLeft="5dp"
+                                android:padding="5dp">
+                                                        <LinearLayout
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:gravity="center_vertical">
+
+                                                            <com.ekplate.android.views.CircularImageView
+                                                                android:src="@drawable/profile_dp"
+                                                                android:layout_width="40dp"
+                                                                android:id="@+id/imgUsrName"
+                                                                android:layout_height="40dp"
+                                                                android:layout_weight="1" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="0">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Added By"
+                                    android:layout_weight="0"
+                                    android:layout_margin="5dp" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Siddhartha"
+                                        android:id="@+id/tvAddedBy"
+                                        android:layout_weight="0"
+                                        android:textSize="10sp" />
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/tick"
+                                        android:layout_weight="1"
+                                        android:scaleType="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:adjustViewBounds="true"
+                                        android:layout_marginRight="5dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                                                        </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                        </FrameLayout>
+
+                        <ImageView
+                            android:id="@+id/ivBookMarkVendorDetails"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="12dip"
+                            android:visibility="visible"
+                            android:layout_weight="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="22dip"
+                        android:visibility="visible"
+                        android:layout_weight="0">
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:id="@+id/tvVendorNameVendorDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#4e4f53"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:singleLine="true"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="7dip">
+
+                            <ImageView
+                                android:id="@+id/ivVegStatusVendorDetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_veg"
+                                android:visibility="gone" />
+
+                            <com.ekplate.android.views.BariolRegularTextView
+                                android:id="@+id/tvInlineMenuVendorDetails"
+                                android:layout_width="200dip"
+                                android:layout_height="wrap_content"
+                                android:textColor="#8bc058"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginRight="15dip"
+                                android:lineSpacingExtra="1.3dip"
+                                android:singleLine="true"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivRatingVendorDetails"
+                            android:layout_width="105dip"
+                            android:layout_height="wrap_content"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_centerInParent="true">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginTop="2dip"
+                                    android:layout_marginRight="5dip">
+
+                                    <com.ekplate.android.views.BariolRegularTextView
+                                        android:id="@+id/tvHygieneRatingVendorDetails"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14.5sp"
+                                        android:textColor="#4e4f53"
+                                        android:textStyle="bold"/>
+
+                                    <com.ekplate.android.views.BariolRegularTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Hygiene"
+                                        android:textSize="14.5sp"
+                                        android:textColor="#a4a6af"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_line"
+                                    android:layout_gravity="top"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginTop="2dip"
+                                    android:layout_marginLeft="5dip">
+
+                                    <com.ekplate.android.views.BariolRegularTextView
+                                        android:id="@+id/tvTasteRatingVendorDetails"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14.5sp"
+                                        android:textColor="#4e4f53"
+                                        android:textStyle="bold"/>
+
+                                    <com.ekplate.android.views.BariolRegularTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Taste"
+                                        android:textSize="14.5sp"
+                                        android:textColor="#a4a6af"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llMyStory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dip"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="12dip"
+                                android:orientation="horizontal"
+                                android:background="@drawable/round_dark_gray_gb">
+
+                                <ImageView
+                                    android:layout_width="18dip"
+                                    android:layout_height="18dip"
+                                    android:src="@drawable/icon_my_story_vendor_inner"
+                                    android:paddingLeft="6dip"
+                                    android:layout_gravity="center_vertical"/>
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingRight="6dip"
+                                    android:paddingLeft="6dip"
+                                    android:text="MY STORY"
+                                    android:textSize="12sp"
+                                    android:textColor="@android:color/white"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--  VENDOR DIRECTION INFO -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="16dip"
+                        android:paddingLeft="16dip"
+                        android:paddingTop="18dip"
+                        android:paddingBottom="18dip"
+                        android:gravity="center_horizontal"
+                        android:background="@android:color/white"
+                        android:visibility="visible">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cvGetDirectionVendorDetails"
+                            android:layout_width="230dip"
+                            android:layout_height="45dip"
+                            android:layout_marginTop="3dip"
+                            card_view:cardBackgroundColor="#FEBE10"
+                            card_view:cardElevation="1dip"
+                            card_view:cardCornerRadius="4dp">
+
+                            <com.ekplate.android.views.OpenSansSemiboldTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="GET DIRECTIONS"
+                                android:textSize="15.5sp"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                android:gravity="center"/>
+
+                        </android.support.v7.widget.CardView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="18dip"
+                            android:paddingRight="18dip"
+                            android:layout_marginTop="15dip">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvShopOpenStatusVendorDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14.5sp"
+                                    android:textColor="#8bc058"
+                                    android:textStyle="bold"/>
+
+                                <com.ekplate.android.views.BariolLightTextView
+                                    android:id="@+id/tvShopClosingTimeVendorDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14.5sp"
+                                    android:textColor="@android:color/black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_alignParentRight="true">
+
+                                <com.ekplate.android.views.BariolLightTextView
+                                    android:id="@+id/tvDistanceVendorDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25 KM "
+                                    android:textSize="14.5sp"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold"/>
+
+                                <ImageView
+                                    android:layout_width="24dip"
+                                    android:layout_height="24dip"
+                                    android:src="@drawable/icon_distance"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--  VENDOR DIRECTION INFO END -->
+
+                    <!-- VENDOR ADDRESS INFO LAYOUT -->
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingTop="10dip"
+                        android:paddingBottom="10dip"
+                        card_view:cardElevation="1dip"
+                        android:visibility="visible"
+                        android:layout_weight="0">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="16dip">
+
+                            <ImageView
+                                android:id="@+id/imgAddressVendorDetails"
+                                android:layout_width="35dip"
+                                android:layout_height="35dip"
+                                android:src="@drawable/icon_location_yellow"
+                                android:layout_weight="1" />
+
+                            <com.ekplate.android.views.BariolRegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:textSize="14.5sp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_marginTop="4dip"
+                                android:layout_weight="1" />
+
+                            <com.ekplate.android.views.BariolLightTextView
+                                android:id="@+id/tvAddressVendorDetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="45 Samadhan Building, Gandhi Nagar"
+                                android:textSize="20dp"
+                                android:textColor="#999999"
+                                android:gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:padding="20dp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--  VENDOR ADDRESS INFO END  -->
+
+                    <!-- Layout for REPORT PROBLEM -->
+
+                    <LinearLayout
+                        android:id="@+id/llVendorDetailsReportProblem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#DCDCDC"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:paddingTop="10dip"
+                        android:paddingBottom="10dip"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="22dip"
+                            android:layout_height="22dip"
+                            android:src="@drawable/icon_report_problem"/>
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="REPORT  PROBLEM"
+                            android:textSize="15.5sp"
+                            android:layout_marginLeft="8dip"/>
+
+                    </LinearLayout>
+
+                    <!-- End -->
+
+                    <!-- VENDOR GALLERY IMAGE LAYOUT -->
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardElevation="1dip"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="12dip"
+                            android:layout_marginRight="12dip"
+                            android:paddingTop="20dip"
+                            android:paddingBottom="20dip"
+                            android:background="@android:color/white">
+
+                            <LinearLayout
+                                android:id="@+id/llGalleryHeadingIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:clickable="true"
+                                android:paddingBottom="4dip">
+
+                                <ImageView
+                                    android:layout_width="35dip"
+                                    android:layout_height="35dip"
+                                    android:src="@drawable/icon_photos_yellow"/>
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Photos"
+                                    android:textSize="14.5sp"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="4dip"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dip"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="17dip">
+
+                                <ImageView
+                                    android:id="@+id/ivGalleryImageOneVendorDetails"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:visibility="gone"/>
+
+                                <LinearLayout
+                                    android:id="@+id/llSeparatorOneVendorDetails"
+                                    android:layout_width="8dip"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"></LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/ivGalleryImageTwoVendorDetails"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:visibility="gone"/>
+
+                                <LinearLayout
+                                    android:id="@+id/llSeparatorTwoVendorDetails"
+                                    android:layout_width="8dip"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"></LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/ivGalleryImageThreeVendorDetails"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:visibility="gone"/>
+                                <LinearLayout
+                                    android:id="@+id/llSeparatorThreeVendorDetails"
+                                    android:layout_width="8dip"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"></LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/llShowGallery"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:background="#DCDCDC"
+                                    android:gravity="center"
+                                    android:clickable="true"
+                                    android:orientation="horizontal">
+
+                                    <!--<com.ekplate.apk.views.BariolLightTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="+"
+                                        android:textSize="21sp"/>-->
+
+                                    <com.ekplate.android.views.BariolLightTextView
+                                        android:id="@+id/tvNoOfGalleryImageVendorDetails"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="19sp"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="8dip"
+                                    android:layout_height="match_parent"></LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/llOpenCamera"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:background="#DCDCDC"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dip"
+                                        android:layout_height="25dip"
+                                        android:src="@drawable/icon_camera_black"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- VENDOR GALLERY IMAGE LAYOUT END -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="16dip"
+                        android:paddingRight="16dip"
+                        android:paddingTop="26dip"
+                        android:paddingBottom="26dip">
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:src="@drawable/icon_menu_yellow"/>
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Menu"
+                            android:textSize="14.5sp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dip"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/llFoodMenuVendorDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="18dip">
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cvFoodMenuMoreVendorDetails"
+                            android:layout_width="95dip"
+                            android:layout_height="34dip"
+                            android:layout_marginTop="25dip"
+                            card_view:cardBackgroundColor="#DD3535"
+                            card_view:cardElevation="1dip"
+                            card_view:cardCornerRadius="4dp">
+
+                            <com.ekplate.android.views.BariolRegularTextView
+                                android:id="@+id/tvFoodMenuMoreVendorDetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="MORE"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                />
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardElevation="1dip">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="26dip"
+                            android:paddingBottom="26dip"
+                            android:background="@android:color/white">
+
+                            <ImageView
+                                android:layout_width="35dip"
+                                android:layout_height="35dip"
+                                android:src="@drawable/icon_review_yellow"/>
+
+                            <com.ekplate.android.views.BariolRegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Reviews"
+                                android:textSize="14.5sp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_marginTop="4dip"
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/llUserReviewContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="35dip"
+                                android:background="@android:color/white">
+
+                            </LinearLayout>
+
+                            <!--<include
+                                layout="@layout/user_review_layout"
+                                />-->
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:id="@+id/llReadAllReviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:clickable="true">
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:id="@+id/tvReadAllReviewText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textColor="#FF0000"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWriteReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dip"
+                        android:orientation="horizontal"
+                        android:background="@color/theme_color"
+                        android:clickable="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:src="@drawable/icon_write_review"/>
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WRITE A REVIEW"
+                            android:textSize="22sp"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="8dip"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarVendorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.ekplate.android.views.BariolRegularTextView
+                android:id="@+id/toolbarHeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <include
+            android:id="@+id/llSidePanel"
+            layout="@layout/vendor_details_side_panel_layout"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EE949494"
+    android:id="@+id/llPopupWindowAddVendor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:padding="5dip">
+
+        <com.ekplate.android.views.BariolRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add College"
+            android:textSize="23sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"/>
+
+        <ImageView
+            android:id="@+id/ivPopupCrossAddCollege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cross_icon_food"
+            android:padding="4dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <EditText
+            android:id="@+id/etAddCollegeName"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/white_border_bg"
+            android:hint="College Name"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"/>
+
+        <EditText
+            android:id="@+id/etAddCollegeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/white_border_bg"
+            android:hint="College Address"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:visibility="gone"
+            />
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete_places"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/white_border_bg"
+            android:hint="College Address"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"/>
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/powered_by_google_light"
+            android:layout_marginRight="10dip"/>-->
+
+        <Button
+            android:id="@+id/btnSubmitNewCollege"
+            android:layout_width="120dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:background="@drawable/round_corners_side_option_bg"
+            android:layout_marginTop="25dip"
+            android:layout_marginBottom="20dip"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bluehorse.ekplate.menumodule.AccountSettingActivity">
+
+    <item
+        android:id="@+id/iconUserAccountEdit"
+        android:title="Edit Option"
+        android:icon="@drawable/icon_edit_account_setting"
+        app:showAsAction="always|collapseActionView"
+        />
+
+</menu>

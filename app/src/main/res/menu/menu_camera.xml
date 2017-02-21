@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bluehorse.ekplate.discovermodule.GaidosPickActivity">
+
+    <item android:id="@+id/actionSelectImage"
+        android:title="Share"
+        android:icon="@drawable/icon_submit_user_account"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+</menu>

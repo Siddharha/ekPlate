@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="theme_color" type="color">#FFBB00</item>
+    <color name="primary">#FFBB00</color>
+    <color name="primary_dark">#E6A800</color>
+    <color name="accent">#FFBB00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_row_color_2">#F1F1F3</color>
+    <color name="transparent_white">#34FFFFFF</color>
+    <item name="theme_select_item_color" type="color">#66FFBB00</item>
+    <item name="fb_lite_color" type="color">#2553B3</item>
+    <item name="fb_dark_color" type="color">#154483</item>
+    <item name="gp_lite_color" type="color">#B73f2A</item>
+    <item name="gp_dark_color" type="color">#B42F1E</item>
+    <item name="edittext_gb_color" type="color">#66000000</item>
+    <item name="round_icon_color" type="color">#3A3B3D</item>
+    <item name="vendor_item_row_bg_color2" type="color">#F1F1F2</item>
+    <item name="vendor_item_row_bg_color1" type="color">#FFFFFF</item>
+    <item name="theme_green_color" type="color">#8BC058</item>
+    <item name="collage_tab_selected_color" type="color">#F08B15</item>
+    <item name="tab_indicator_text_color" type="color">#EF8A14</item>
+    <item name="veg_mode_green_color" type="color">#018A1E</item>
+    <item name="nonveg_mode_red_color" type="color">#B42F1E</item>
+    <item name="social_background_color" type="color">#DD000000</item>
+    <item name="plus_menu_background_color" type="color">#CA000000</item>
+    <item name="order_online_color" type="color">#C63170</item>
+    <item name="add_review_color" type="color">#9777A8</item>
+    <item name="add_picture_color" type="color">#48A0DC</item>
+    <item name="checkin_color" type="color">#EEAF4B</item>
+    <item name="add_vendor_color" type="color">#E67706</item>
+    <item name="transparent_color" type="color">#00000000</item>
+    <item name="my_switch_color" type="color">#000000</item>
+    <color name="most_recent_search_text_background">#66FFFFFF</color>
+
+</resources>

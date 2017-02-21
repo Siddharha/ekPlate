@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="75dip"
+        android:layout_height="232dip"
+        android:background="@drawable/round_corners_side_option_bg"
+        android:weightSum="10"
+        android:layout_marginTop="63dip"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_checkin_vendor_inner"/>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvCheckinSideVendorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dip"
+                android:background="#f0b301"
+                android:layout_alignParentBottom="true"></FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLikeVendor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_likes"/>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvLikesSideVendorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dip"
+                android:background="#f0b301"
+                android:layout_alignParentBottom="true"></FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlVendorDetailsRating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/ivBookmarkSideVendorDetails"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_bookmark_side_bar"/>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvBookmarkSideVendorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dip"
+                android:background="#f0b301"
+                android:layout_alignParentBottom="true"></FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlVendorDetailsReview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_reviews"/>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvReviewsSideVendorDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

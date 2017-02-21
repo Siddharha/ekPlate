@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="rectangle"
+                    android:visible="true"
+                    android:dither="true"
+                    android:useLevel="false">
+                    <gradient
+                        android:startColor="#9A9A9A"
+                        android:endColor="#9A9A9A"
+                        android:angle="270"/>
+                    <corners
+                        android:radius="35dp"/>
+                    <size
+                        android:width="110dp"
+                        android:height="20dp" />
+                    <padding android:bottom="1dip"
+                        android:top="1dip"
+                        android:left="1dip"
+                        android:right="1dip"/>
+                </shape>
+            </item>
+            <item
+                android:left="1dp"
+                android:right="0dp"
+                android:top="1dp"
+                android:bottom="1dp">
+                <shape
+                    android:shape="rectangle"
+                    android:visible="true"
+                    android:dither="true"
+                    android:useLevel="false">
+                    <gradient
+                        android:startColor="#FFFFFF"
+                        android:endColor="#FFFFFF"
+                        android:angle="270"/>
+                    <corners
+                        android:radius="35dp"/>
+                    <size
+                        android:width="110dp"
+                        android:height="20dp" />
+                    <padding android:bottom="2dip"
+                        android:top="2dip"
+                        android:left="2dip"
+                        android:right="2dip"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="rectangle"
+                    android:visible="true"
+                    android:dither="true"
+                    android:useLevel="false">
+                    <gradient
+                        android:startColor="#9A9A9A"
+                        android:endColor="#9A9A9A"
+                        android:angle="270"/>
+                    <corners
+                        android:radius="35dp"/>
+                    <size
+                        android:width="110dp"
+                        android:height="20dp" />
+                    <padding android:bottom="1dip"
+                        android:top="1dip"
+                        android:left="1dip"
+                        android:right="1dip"/>
+                </shape>
+            </item>
+            <item
+                android:left="1dp"
+                android:right="0dp"
+                android:top="1dp"
+                android:bottom="1dp">
+                <shape
+                    android:shape="rectangle"
+                    android:visible="true"
+                    android:dither="true"
+                    android:useLevel="false">
+                    <gradient
+                        android:startColor="#FFBB00"
+                        android:endColor="#FFBB00"
+                        android:angle="270"/>
+                    <corners
+                        android:radius="35dp"/>
+                    <size
+                        android:width="110dp"
+                        android:height="20dp" />
+                    <padding android:bottom="2dip"
+                        android:top="2dip"
+                        android:left="2dip"
+                        android:right="2dip"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

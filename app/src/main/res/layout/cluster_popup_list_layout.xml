@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/llClusterItemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:padding="20dip"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <com.ekplate.android.views.BariolBoldTextView
+                android:id="@+id/tvVendorNameClusterPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <com.ekplate.android.views.BariolRegularTextView
+                android:id="@+id/tvVendorAddressClusterPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <com.ekplate.android.views.BariolBoldTextView
+                android:id="@+id/tvVendorFoodItemClusterPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:src="@drawable/icon_distance"/>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvVendorDistanceClusterPopup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="15dip">
+
+                <ImageView
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:src="@drawable/icon_heart_line_my_story"/>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvVendorNoOfLikesClusterPopup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="15dip">
+
+                <LinearLayout
+                    android:id="@+id/llRatingContainerLayoutClusterPopup"
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/round_green_button">
+
+                    <com.ekplate.android.views.BariolRegularTextView
+                        android:id="@+id/tvVendorRatingClusterPopup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:textSize="14sp"
+                        android:paddingTop="4dip"
+                        android:paddingBottom="3dip"
+                        android:textColor="@android:color/black"/>
+
+                </LinearLayout>
+
+                <com.ekplate.android.views.BariolRegularTextView
+                    android:id="@+id/tvVendorReviewsClusterPopup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray"></FrameLayout>
+
+</LinearLayout>

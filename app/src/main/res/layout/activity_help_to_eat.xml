@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".discovermodule.HelpMeEatActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlMainContainerHelpMeEat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical">
+
+                <com.ekplate.android.views.BariolBoldTextView
+                    android:id="@+id/tvHelpMeEatQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you want to eat it with a fork or be handheld or have with a straw?"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:layout_marginTop="30dip"
+                    android:lineSpacingExtra="5dp"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvHelpMeEatOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMainContainerGaido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivGaidoFoodImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_image_vendor_inside"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gaidos_pick_gradient_bg">
+
+            <ImageView
+                android:id="@+id/ivReloadGaido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_loading_gaidos"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:padding="10dip"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#68000000"
+                android:layout_alignParentBottom="true"
+                android:padding="8dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="8dip"
+                    android:gravity="center">
+
+                    <com.ekplate.android.views.BariolBoldTextView
+                        android:id="@+id/tvGaidoFoodName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chinese Food Salad"
+                        android:textColor="@android:color/white"
+                        android:textSize="32sp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/ivGaidoFoodType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_veg"
+                        android:layout_marginLeft="8dip"
+                        android:background="@android:color/white"/>
+
+                </LinearLayout>
+
+                <com.ekplate.android.views.BariolLightTextView
+                    android:id="@+id/tvGaidoVendorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclusive Food"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="2dip"
+                    android:textSize="28sp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_location_gaidos"
+                            android:layout_marginLeft="8dip"/>
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:id="@+id/tvGaidoVendorAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="Bandra East"
+                            android:singleLine="true"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dip"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_gaidos_distance"
+                            android:layout_marginLeft="8dip"/>
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:id="@+id/tvGaidoVendorDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="2.5KM"
+                            android:singleLine="true"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dip"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_like_gaidos"
+                            android:layout_marginLeft="8dip"/>
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:id="@+id/tvGaidoVendorLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="1434 Likes"
+                            android:singleLine="true"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="6dip"
+                            android:layout_marginTop="3dip"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dip"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_rating_gaidos"
+                            android:layout_marginLeft="8dip"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dip"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="45dip"
+                                android:layout_height="22dip"
+                                android:background="@drawable/round_rating_four_layout_bg"
+                                android:gravity="center"
+                                android:layout_marginLeft="4dip">
+
+                                <com.ekplate.android.views.BariolLightTextView
+                                    android:id="@+id/tvGaidoVendorRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.0"
+                                    android:textColor="@android:color/white" />
+
+                            </LinearLayout>
+
+                            <com.ekplate.android.views.BariolLightTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rated"
+                                android:layout_marginLeft="3dip"
+                                android:layout_marginRight="4dip"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dip"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_gaido_reviews"
+                            android:layout_marginBottom="3dip"/>
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:id="@+id/tvGaidoVendorReview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="20 Reviews"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginTop="3dip"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llEnnroPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/icon_error_one"
+            android:layout_margin="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/icon_loader"
+            android:layout_margin="20dp"
+            android:onClick="clkReFrash" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProgressbarContainerHelpMeEat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/theme_color"
+            android:indeterminateTintMode="src_in"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/tbHelpToEat"
+        layout="@layout/toolbar_layout"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.bluehorse.ekplate.menumodule.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#55000000"
+        android:layout_above="@+id/llAboutTermsCondition">
+
+        <WebView
+            android:id="@+id/wvAboutEkplate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
+        <RelativeLayout
+            android:id="@+id/rlProgressBarContainerAbout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/theme_color"
+                android:indeterminateTintMode="src_in"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/llErrorNetConnectionAbout"
+            layout="@layout/error_screen_one_layout"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/tbAbout"
+        layout="@layout/toolbar_layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/llAboutTermsCondition"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ekplate.android.views.BariolRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TERMS &amp; CONDITIONS"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

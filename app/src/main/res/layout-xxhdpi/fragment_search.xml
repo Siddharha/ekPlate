@@ -1,0 +1,484 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="50dip"
+            android:background="#66FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_search_in_home" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSearchViewTextContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:gravity="center">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:editable="false"
+                    android:hint="Search by food stall or location"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSearchViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMainContainerSearchProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="10">
+
+        <ProgressBar
+            android:id="@+id/progressBarSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTintMode="src_in"
+            android:visibility="gone" />
+
+
+        <com.ekplate.android.views.BariolRegularTextView
+            android:id="@+id/tvNoSearchResultFoundText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <!--Edit from here-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llMainContainerSearchInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/top_margin_search_container"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Most Search Container-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.ekplate.android.views.BariolRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/most_recent_search_text_background"
+                        android:paddingLeft="@dimen/recent_most_search_text_padding_left"
+                        android:text="TRENDING ON EKPLATE"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:layout_marginBottom="@dimen/search_content_margin"
+                        android:layout_marginTop="@dimen/search_content_margin"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/llMostSearchFirst"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivMostSearchFirst"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvMostSearchedItemNameFirst"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/white" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMostSearchSecond"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivMostSearchSecond"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvMostSearchedItemNameSecond"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/white" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMostSearchThird"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivMostSearchThird"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvMostSearchedItemNameThird"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_horizontal">
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMostSearchFourth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivMostSearchFourth"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvMostSearchedItemNameFourth"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/white" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Recent Search container-->
+                <LinearLayout
+                    android:id="@+id/llRecentSearchContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.ekplate.android.views.BariolRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/most_recent_search_text_background"
+                        android:gravity="start|center_vertical"
+                        android:paddingLeft="@dimen/recent_most_search_text_padding_left"
+                        android:text="RECENTLY SEARCHED BY ME"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:layout_marginTop="@dimen/search_content_margin"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:id="@+id/llRecentSearchFirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivRecentSearchFirst"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvRecentSearchedItemNameFirst"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/holo_blue_dark" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llRecentSearchSecond"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivRecentSearchSecond"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvRecentSearchedItemNameSecond"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/white" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llRecentSearchThird"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivRecentSearchThird"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvRecentSearchedItemNameThird"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_horizontal">
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llRecentSearchFourth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.ekplate.android.views.CircularImageView
+                                    android:id="@+id/ivRecentSearchFourth"
+                                    android:layout_width="70dip"
+                                    android:layout_height="70dip"
+                                    android:layout_marginBottom="5dip"
+                                    app:border_color="@android:color/darker_gray"
+                                    app:border_width="1" />
+
+                                <com.ekplate.android.views.BariolRegularTextView
+                                    android:id="@+id/tvRecentSearchedItemNameFourth"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/white" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

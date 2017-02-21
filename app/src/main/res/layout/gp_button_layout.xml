@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dip"
+    android:layout_weight="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginRight="30dip"
+        android:layout_marginLeft="30dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.25"
+            android:gravity="center"
+            android:background="@drawable/round_button_gp_dark_bg">
+
+            <ImageView
+                android:layout_width="22dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gp_icon"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/gpFbLoginBtnLanding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:background="@drawable/round_button_gp_lite_bg"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <com.ekplate.android.views.OpenSansSemiboldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN WITH GOOGLE+"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:textSize="15sp"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/llVendorRowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="15dip"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivVendorListBookmark"
+                android:layout_width="20dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="25dip" />
+
+        </LinearLayout>
+        <!--Last row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.25"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6.75"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:background="@drawable/round_icon_vendor_list"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivVendorListIcon"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip" />
+
+                    <com.ekplate.android.views.BariolRegularTextView
+                        android:id="@+id/tvVendorTextInRound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:textColor="@color/theme_color"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.25"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="16"
+                    android:orientation="vertical">
+
+                    <com.ekplate.android.views.BariolRegularTextView
+                        android:id="@+id/tvNameVendorList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textSize="18sp" />
+
+                    <com.ekplate.android.views.BariolRegularTextView
+                        android:id="@+id/tvInlineAddressVendorList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textSize="13sp" />
+
+                    <com.ekplate.android.views.BariolBoldTextView
+                        android:id="@+id/tvFoodMenuVendorList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textSize="13sp" />
+
+                    <!-- Last row start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/llRatingContainerVendorList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/round_rating_layout_bg"
+                            android:gravity="center">
+
+                            <com.ekplate.android.views.BariolRegularTextView
+                                android:id="@+id/tvRatingVendorList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/round_rating_layout_bg"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:paddingTop="4dp"
+                                android:text="567"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <com.ekplate.android.views.BariolItalicTextView
+                            android:id="@+id/tvReviewCountVendorList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dip"
+                            android:text="12"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/ivRatingListLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dp"
+                            android:src="@drawable/icon_heart_line_my_story"
+                            android:visibility="gone" />
+
+                        <com.ekplate.android.views.BariolItalicTextView
+                            android:id="@+id/tvRatingListLikeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dip"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <com.ekplate.android.views.BariolRegularTextView
+                            android:id="@+id/tvCloseStatusVendorList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:text="CLOSED"
+                            android:textColor="@android:color/holo_red_dark" />
+
+                        <LinearLayout
+                            android:id="@+id/llDirectionValueContainerVendorList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:orientation="vertical"
+                            android:paddingRight="15dp">
+
+                            <com.ekplate.android.views.BariolRegularTextView
+                                android:id="@+id/tvDistenceVendorList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:layout_width="20dip"
+                                android:layout_height="25dip"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="4dip"
+                                android:src="@drawable/icon_distance" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

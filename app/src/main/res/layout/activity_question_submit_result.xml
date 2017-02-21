@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bluehorse.ekplate.menumodule.QuestionSubmitResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_thank_you"/>
+
+        <com.ekplate.android.views.BariolRegularTextView
+            android:id="@+id/tvSuccessTextOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:padding="16dip"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginTop="5dip"/>
+
+        <com.ekplate.android.views.BariolRegularTextView
+            android:id="@+id/tvSuccessTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:padding="16dip"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginTop="5dip"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_bg"
+        android:id="@+id/tbWriteReview">
+
+        <ImageView
+            android:id="@+id/ivBackThankYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_back"
+            android:layout_centerVertical="true"
+            android:padding="5dip"
+            android:layout_marginLeft="8dip"/>
+
+        <com.ekplate.android.views.BariolRegularTextView
+            android:id="@+id/toolbarHeaderTextThankYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/llDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true">
+
+            <com.ekplate.android.views.BariolBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:padding="10dip"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

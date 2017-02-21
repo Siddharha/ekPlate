@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bluehorse.ekplate.vendormodule.MyStoryCommentActivity">
+
+    <include
+        android:id="@+id/tbMyStoryComment"
+        layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8.5"
+                android:gravity="center"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:orientation="vertical">
+
+                <com.ekplate.android.views.BariolBoldTextView
+                    android:id="@+id/tvNameOfUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginBottom="15dip"
+                android:background="@drawable/help_to_improve_textarea_bg">
+
+                <EditText
+                    android:id="@+id/etCommentMyStory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_marginBottom="15dip"
+                    android:hint="Type your comment.."
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:orientation="vertical"
+            android:background="#F3F3F3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSubmitCommentMyStory"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:background="@drawable/round_rating_layout_bg"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

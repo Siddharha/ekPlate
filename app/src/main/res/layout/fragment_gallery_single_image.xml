@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bluehorse.fragments.vendormodule.GallerySingleImageFragment">
+
+    <ImageView
+        android:id="@+id/ivMainSingleImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gaidos_pick_gradient_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:gravity="center"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/ivSingleImageShare"
+                android:layout_width="47dip"
+                android:layout_height="47dip"
+                android:src="@drawable/ic_action_share"
+                android:padding="10dip"/>
+
+            <ImageView
+                android:id="@+id/ivSingleImageLike"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:src="@drawable/icon_single_image_like_selected"
+                android:padding="10dip"/>
+
+            <com.ekplate.android.views.BariolRegularTextView
+                android:id="@+id/tvSingleImageLikeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="4dip"/>
+
+        </LinearLayout>
+
+        <com.ekplate.android.views.BariolBoldTextView
+            android:id="@+id/tvSingleImageFoodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:textSize="25sp"
+            android:padding="17dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dip"/>
+
+        <LinearLayout
+            android:id="@+id/llReportProblem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dip"
+            android:layout_marginBottom="6dip"
+            android:clickable="true">
+
+            <com.ekplate.android.views.BariolRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report a problem"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+            
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:src="@drawable/icon_report_a_problem"
+                android:layout_marginLeft="10dip"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

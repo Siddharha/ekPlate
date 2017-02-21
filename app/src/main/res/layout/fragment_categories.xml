@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bluehorse.fragments.homemodule.HungryFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dip"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.ekplate.android.views.BariolLightItalicTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textSize="50sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <!--<RelativeLayout
+                android:id="@+id/rlBreakfast"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_marginTop="30dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="5dip"
+                android:background="#88FFFFFF">
+
+                <com.ekplate.apk.views.BariolRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="BREAKFAST"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="20dip"
+                    />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/icon_breakfast"
+                    android:layout_marginRight="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLunch"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="5dip"
+                android:background="#88FFFFFF">
+
+                <com.ekplate.apk.views.BariolRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="LUNCH"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="20dip"
+                    />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/icon_lunch"
+                    android:layout_marginRight="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlEveningSnack"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="5dip"
+                android:background="#88FFFFFF">
+
+                <com.ekplate.apk.views.BariolRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="EVENING SNACK"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="20dip"
+                    />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/icon_snack"
+                    android:layout_marginRight="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLastNightGrub"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="5dip"
+                android:background="#88FFFFFF">
+
+                <com.ekplate.apk.views.BariolRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="LAST NIGHT GRUB"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="20dip"
+                    />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/icon_night"
+                    android:layout_marginRight="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCategoryList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dip">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+</LinearLayout>

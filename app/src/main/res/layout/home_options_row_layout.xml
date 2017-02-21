@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:id="@+id/rlRowMailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginBottom="3dip"
+        android:clickable="true"
+        android:background="#73FFFFFF">
+
+        <com.ekplate.android.views.BariolRegularTextView
+            android:id="@+id/tvHomeMenuItemTitle"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="20dip"
+            />
+
+        <ImageView
+            android:id="@+id/ivHomeMenuItemIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

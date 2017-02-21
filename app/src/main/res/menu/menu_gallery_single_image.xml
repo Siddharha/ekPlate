@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bluehorse.ekplate.vendormodule.GallerySingleImageActivity">
+    <item
+        android:id="@+id/iconTakePhoto"
+        android:title="Take Image"
+        android:icon="@drawable/icon_take_photo"
+        app:showAsAction="always|collapseActionView"
+        />
+</menu>

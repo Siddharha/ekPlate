@@ -1,0 +1,74 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.bluehorse.ekplate.VendorsActivity">
+
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/tbCollageList"
+            layout="@layout/toolbar_layout"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayoutCollageList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/TabBarTextStyle"
+            app:tabIndicatorHeight="2dip"
+            app:tabIndicatorColor="@color/theme_color"
+            app:tabSelectedTextColor="@color/theme_color"
+            app:tabMinWidth="105dip"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@android:color/darker_gray"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddCollage"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_color"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <com.ekplate.android.views.BariolBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add My College"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingLeft="14dip"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpCollageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

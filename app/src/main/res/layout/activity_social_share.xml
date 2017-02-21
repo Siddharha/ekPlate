@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_background_color"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/llLeftLayoutSocialShare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical"
+        android:paddingRight="10dip"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivTwitterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_twitter_social_share"
+            android:padding="10dip"/>
+
+        <ImageView
+            android:id="@+id/ivFacebookIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_facebook_social_share"
+            android:visibility="invisible"
+            android:padding="10dip"/>
+
+        <ImageView
+            android:id="@+id/ivWechatIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_wechat_social_share"
+            android:visibility="invisible"
+            android:padding="10dip"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRightLayoutSocialShare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivMailIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_mail_social_share"
+            android:padding="10dip"/>
+
+        <ImageView
+            android:id="@+id/ivGooglePlusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_google_social_share"
+            android:visibility="invisible"
+            android:padding="10dip"/>
+
+        <ImageView
+            android:id="@+id/ivWhatsappIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_whatsapp_social_share"
+            android:visibility="invisible"
+            android:padding="10dip"/>
+
+    </LinearLayout>
+
+</LinearLayout>
