@@ -82,6 +82,8 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
     private void permission() {
         if(!CreativePermission.hasPermissions(PERMISSIONS)) {
             myPermission.reqPermisions();
+        }else {
+            nextWork();
         }
     }
 
