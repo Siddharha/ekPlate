@@ -76,9 +76,10 @@ public class DbAdapter {
         contentValues.put(DbConstantClass.TAG_CONTACT_NO, contactNo);
         contentValues.put(DbConstantClass.TAG_SHOP_NAME, shopName);
         contentValues.put(DbConstantClass.TAG_MOST_SELLING_FOOD, mostSellingFood);
+        contentValues.put(DbConstantClass.TAG_BASIC_VENDOR_ID, _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID));
         Long lastInsertedVendorId = dbSqLiteDatabase.insert(DbConstantClass.TAG_TB_VENDOR_BASIC_INFO, null, contentValues);
         Log.e("lastInsertedVendorId", String.valueOf(lastInsertedVendorId));
-        _pref.setSession(ConstantClass.TAG_INSERTED_VENDOR_ID, String.valueOf(lastInsertedVendorId));
+        //_pref.setSession(ConstantClass.TAG_INSERTED_VENDOR_ID, String.valueOf(lastInsertedVendorId));
     }
 
     public int updateVendorLocation(String address, String latitude, String longitude){
@@ -87,7 +88,7 @@ public class DbAdapter {
         contentValues.put(DbConstantClass.TAG_LATITUDE, latitude);
         contentValues.put(DbConstantClass.TAG_LONGITUDE, longitude);
         int success = dbSqLiteDatabase.update(DbConstantClass.TAG_TB_VENDOR_BASIC_INFO, contentValues,
-                "id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
+                "vendor_id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
         return success;
     }
 
@@ -96,7 +97,7 @@ public class DbAdapter {
         contentValues.put(DbConstantClass.TAG_HYGIENE_RATING, hygieneRating);
         contentValues.put(DbConstantClass.TAG_TASTE_RATING, tasteRating);
         int success = dbSqLiteDatabase.update(DbConstantClass.TAG_TB_VENDOR_BASIC_INFO, contentValues,
-                "id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
+                "vendor_id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
         return success;
     }
 
@@ -112,9 +113,10 @@ public class DbAdapter {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DbConstantClass.TAG_IMAGE_PATH, imagePath);
         contentValues.put(DbConstantClass.TAG_IMAGE_CAPTION, caption);
-        contentValues.put(DbConstantClass.TAG_IMAGE_VENDOR_ID, _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID));
         Long lastInsertedVendorId = dbSqLiteDatabase.insert(DbConstantClass.TAG_TB_VENDOR_IMAGE, null, contentValues);
         Log.e("lastInsertedImage", String.valueOf(lastInsertedVendorId));
+        _pref.setSession(ConstantClass.TAG_INSERTED_VENDOR_ID, String.valueOf(lastInsertedVendorId));
+
     }
 
     public void insertVendorVideoInfo(String caption, String videoPath){
@@ -170,7 +172,7 @@ public class DbAdapter {
         ArrayList<VendorBasicInfoItem> vendorBasicInfoItems = new ArrayList<VendorBasicInfoItem>();
         Cursor cursorScan;
         cursorScan = dbSqLiteDatabase.rawQuery("select *" +
-                " from tb_vendor_basic_info where id = " +
+                " from tb_vendor_basic_info where vendor_id = " +
                 _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
 
         int pos_id = cursorScan.getColumnIndex(DbConstantClass.TAG_ID);
@@ -207,7 +209,7 @@ public class DbAdapter {
         menuList.clear();
         Cursor c;
         c = dbSqLiteDatabase.rawQuery("select * from " + DbConstantClass.TAG_TB_VENDOR_FOOD_MENU + " where " +
-                "vendor_id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
+                "id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
         int row_id_pos = c.getColumnIndex(DbConstantClass.TAG_FOOD_ID);
         int foodName_pos = c.getColumnIndex(DbConstantClass.TAG_FOOD_NAME);
         int foodValue_pos = c.getColumnIndex(DbConstantClass.TAG_FOOD_PRICE);
@@ -228,8 +230,8 @@ public class DbAdapter {
         AddVendorImagesActivity.dataT.clear();
         Cursor c;
         String v_id =_pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID);
-        c = dbSqLiteDatabase.rawQuery("select * from " + DbConstantClass.TAG_TB_VENDOR_IMAGE + " where " +
-                "vendor_id = " + v_id, null);
+        c = dbSqLiteDatabase.rawQuery("select * from " + DbConstantClass.TAG_TB_VENDOR_IMAGE/* + " where " +
+                "id = " + v_id*/, null);
         int imagePath_pos = c.getColumnIndex(DbConstantClass.TAG_IMAGE_PATH);
         int i=0;
         for (c.moveToFirst(); !(c.isAfterLast()); c.moveToNext()) {
@@ -251,6 +253,10 @@ public class DbAdapter {
     public boolean deleteSelectedImage(int imageId) {
         return dbSqLiteDatabase.delete(DbConstantClass.TAG_TB_VENDOR_IMAGE, DbConstantClass.TAG_ID +
         "=" + imageId, null) > 0;
+    }
+
+    public boolean deleteMultipleSelectedImages(){
+        return dbSqLiteDatabase.delete(DbConstantClass.TAG_TB_VENDOR_IMAGE, null, null) > 0;
     }
 
     public ArrayList<VideoItem> getVideo(ArrayList<VideoItem> videoList) {

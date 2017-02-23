@@ -13,6 +13,7 @@ public class DbConstantClass {
     public static final String TAG_TB_USER_PROF = "tb_user_prof";
 
     public static final String TAG_ID = "id";
+    public static final String TAG_BASIC_VENDOR_ID = "vendor_id";
     public static final String TAG_VENDOR_NAME = "vendor_name";
     public static final String TAG_SHOP_NAME = "shop_name";
     public static final String TAG_MOST_SELLING_FOOD = "most_selling_food";
@@ -31,7 +32,7 @@ public class DbConstantClass {
     public static final String TAG_IMAGE_ID = "id";
     public static final String TAG_IMAGE_CAPTION = "image_caption";
     public static final String TAG_IMAGE_PATH = "image_path";
-    public static final String TAG_IMAGE_VENDOR_ID = "vendor_id";
+   // public static final String TAG_IMAGE_VENDOR_ID = "vendor_id";
 
     public static final String TAG_VIDEO_ID = "id";
     public static final String TAG_VIDEO_CAPTION = "video_caption";
@@ -52,7 +53,8 @@ public class DbConstantClass {
             " latitude text," +
             " longitude text," +
             " hygiene_rating text," +
-            " taste_rating text)";
+            " taste_rating text," +
+            " vendor_id integer not null)";
 
     public static final String TAG_CREATE_VENDOR_FOOD_MENU_TB = "create table tb_vendor_food_menu" +
             "(id integer primary key autoincrement," +
@@ -63,8 +65,7 @@ public class DbConstantClass {
     public static final String TAG_CREATE_VENDOR_IMAGE_TB = "create table tb_vendor_image" +
             "(id integer primary key autoincrement," +
             " image_path text not null," +
-            " image_caption text not null," +
-            " vendor_id integer not null)";
+            " image_caption text not null)";
 
     public static final String TAG_CREATE_VENDOR_VIDEO_TB = "create table tb_vendor_video" +
             "(id integer primary key autoincrement," +

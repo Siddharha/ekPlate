@@ -280,14 +280,14 @@ public class AddVendorMenuActivity extends BaseActivity
                 String.valueOf(vendorId), false));
 
         _postMap.put("no_image", _comFunc.getPostObject(
-                String.valueOf(dataT.size()),
+                String.valueOf(imageItems.size()),
                 false));
+        _postMap.put("imageType", _comFunc.getPostObject("1", false));
 
         _postMap.put("vendorCaption", _comFunc.getPostObject(String.valueOf(" "), false));
 
         for(int i=0; i<imageItems.size(); i++){
-          //  Log.e("image path", dataT.get(i).sdcardPath);
-            _postMap.put("file_type_" + i, _comFunc.getPostObject("image", false));
+            Log.e("imageX", imageItems.get(i).getImagePath());
             _postMap.put("image_" + i, _comFunc.getPostObject(imageItems.get(i).getImagePath(), true));
         }
 

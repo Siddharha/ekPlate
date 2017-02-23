@@ -308,6 +308,11 @@ public class AddVendorImagesActivity extends BaseActivity
         cvAddMenuImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                dbAdapter.open();
+                dbAdapter.deleteMultipleSelectedImages();
+                dbAdapter.close();
+
                 for (int i = 0; i < dataT.size(); i++) {
                     Log.e("sdcardPath", dataT.get(i).sdcardPath);
                     if (dataT.get(i).selectedImageId == 0) {
