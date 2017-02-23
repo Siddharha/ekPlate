@@ -228,8 +228,8 @@ public class DbAdapter {
         AddVendorImagesActivity.dataT.clear();
         Cursor c;
         String v_id =_pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID);
-        c = dbSqLiteDatabase.rawQuery("select * from " + DbConstantClass.TAG_TB_VENDOR_IMAGE /*+ " where " +
-                "vendor_id = " + v_id*/, null);
+        c = dbSqLiteDatabase.rawQuery("select * from " + DbConstantClass.TAG_TB_VENDOR_IMAGE + " where " +
+                "vendor_id = " + v_id, null);
         int imagePath_pos = c.getColumnIndex(DbConstantClass.TAG_IMAGE_PATH);
         int i=0;
         for (c.moveToFirst(); !(c.isAfterLast()); c.moveToNext()) {

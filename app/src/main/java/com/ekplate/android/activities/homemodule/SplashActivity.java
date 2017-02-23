@@ -43,6 +43,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
+import in.creativelizard.androidpermission.CreativePermission;
+
 
 public class SplashActivity extends BaseActivity implements BackgroundActionInterface {
     private static final int REQUEST_CODE_ASK_PERMISSIONS = 1;
@@ -61,6 +63,10 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
     private List<Address> addresses;
     private Geocoder geocoder;
     LocationManager locationManager;
+    private static final int PERMISSION_ALL = 100;
+    private CreativePermission myPermission;
+    private String[] PERMISSIONS = { Manifest.permission.ACCESS_FINE_LOCATION,
+                                    Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,12 +75,24 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
         getWindow().setBackgroundDrawable(null);
         getSupportActionBar().hide();
         initialize();
+        permission();
 
+    }
+
+    private void permission() {
+        if(!CreativePermission.hasPermissions(PERMISSIONS)) {
+            myPermission.reqPermisions();
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+     // nextWork();
+
+    }
+
+    private void nextWork() {
         Log.e("select city status", String.valueOf(
                 _pref.getIntegerSession(ConstantClass.TAG_SELECTED_CITY_STATUS)));
         if (_pref.getIntegerSession(ConstantClass.TAG_SELECTED_CITY_STATUS) != 1) {
@@ -111,7 +129,6 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
         } catch (Exception e) {
             Log.e("error data", e.getMessage());
         }
-
 
     }
 
@@ -197,7 +214,7 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
     }
 
 
-    @Override
+   /* @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         switch (requestCode) {
             case REQUEST_CODE_ASK_PERMISSIONS:
@@ -246,8 +263,23 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
                 super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
+*/
+
+    @Override public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) { super.onRequestPermissionsResult(requestCode, permissions, grantResults); if(requestCode == PERMISSION_ALL) {
+
+
+            if(grantResults[0] != -1){
+                if(grantResults[1]!=-1){
+                    nextWork();
+                }
+            }
+
+
+    }
+    }
 
     private void initialize(){
+        myPermission = new CreativePermission(this,PERMISSIONS,PERMISSION_ALL);
         _callServiceAction = new CallServiceAction(this);
         _callServiceAction.actionInterface = SplashActivity.this;
         _pref = new Pref(this);
