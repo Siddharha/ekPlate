@@ -208,8 +208,8 @@ public class DbAdapter {
         // TODO Auto-generated method stub
         menuList.clear();
         Cursor c;
-        c = dbSqLiteDatabase.rawQuery("select * from " + DbConstantClass.TAG_TB_VENDOR_FOOD_MENU + " where " +
-                "id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID), null);
+        c = dbSqLiteDatabase.rawQuery("select * from " + DbConstantClass.TAG_TB_VENDOR_FOOD_MENU /*+ " where " +
+                "id = " + _pref.getSession(ConstantClass.TAG_INSERTED_VENDOR_ID)*/, null);
         int row_id_pos = c.getColumnIndex(DbConstantClass.TAG_FOOD_ID);
         int foodName_pos = c.getColumnIndex(DbConstantClass.TAG_FOOD_NAME);
         int foodValue_pos = c.getColumnIndex(DbConstantClass.TAG_FOOD_PRICE);
@@ -253,6 +253,11 @@ public class DbAdapter {
     public boolean deleteSelectedImage(int imageId) {
         return dbSqLiteDatabase.delete(DbConstantClass.TAG_TB_VENDOR_IMAGE, DbConstantClass.TAG_ID +
         "=" + imageId, null) > 0;
+    }
+
+    public boolean deleteMenuList() {
+        // TODO Auto-generated method stub
+        return dbSqLiteDatabase.delete(DbConstantClass.TAG_TB_VENDOR_FOOD_MENU, null, null) > 0;
     }
 
     public boolean deleteMultipleSelectedImages(){

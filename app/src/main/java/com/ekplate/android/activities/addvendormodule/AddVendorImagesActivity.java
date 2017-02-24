@@ -118,6 +118,8 @@ public class AddVendorImagesActivity extends BaseActivity
     }
 
     private void initialize(){
+
+
         toolbarAddVendors = (Toolbar) findViewById(R.id.toolbarAddVendors);
         toolbarHeaderText = (TextView) findViewById(R.id.toolbarHeaderText);
         gridGallery = (GridView) findViewById(R.id.gridGallery);
@@ -155,6 +157,12 @@ public class AddVendorImagesActivity extends BaseActivity
         imageLoader = ImageLoader.getInstance();
         imageLoader.init(config);
         gridGalleryVideo.setAdapter(selectedVideoAdapter);
+
+        if(getIntent().getBooleanExtra("isNewVendor",false)){
+            dbAdapter.open();
+            dbAdapter.deleteMenuList();
+            dbAdapter.close();
+        }
     }
 
     private void setUpToolbar(){

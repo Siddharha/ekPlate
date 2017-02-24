@@ -32,6 +32,7 @@ import com.ekplate.android.activities.addvendormodule.AddVendorInformationActivi
 import com.ekplate.android.activities.addvendormodule.CustomGallery;
 import com.ekplate.android.activities.homemodule.HomeResideActivity;
 import com.ekplate.android.activities.vendormodule.VendorsActivity;
+import com.ekplate.android.adapters.addvendormodule.DbAdapter;
 import com.ekplate.android.adapters.homemodule.HomePagerAdapter;
 import com.ekplate.android.config.EkplateApplication;
 import com.ekplate.android.services.LocationTrackingService;
@@ -84,7 +85,6 @@ public class HomeFragment extends Fragment {
     private Pref _pref;
     public String migratedFrom="";
     private ChangeLocationPopup changeLocationPopup;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -488,7 +488,10 @@ public class HomeFragment extends Fragment {
                 _pref.setSession(ConstantClass.TAG_ADD_VENDOR_LOCATION_FLAG, 0);
                 _pref.setSession(ConstantClass.TAG_ADD_VENDOR_IMAGE_VIDEO_FLAG, 0);
                 _pref.setSession(ConstantClass.TAG_ADD_VENDOR_MENU_FLAG, 0);
-                startActivity(new Intent(getActivity(), AddVendorImagesActivity.class));
+
+                Intent intent = new Intent(getActivity(), AddVendorImagesActivity.class);
+                intent.putExtra("isNewVendor",true);
+                startActivity(intent);
                 getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 
                 //-------------------------------------------------------------------------------------------//

@@ -259,16 +259,19 @@ public class LandingActivity extends BaseActivity
                 @Override
                 public void onException(Throwable throwable) {
                     super.onException(throwable);
+                   // Toast.makeText(LandingActivity.this, throwable.getMessage(), Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
                 public void onFail(String reason) {
                     super.onFail(reason);
+                    //Toast.makeText(LandingActivity.this, reason, Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
                 public void onThinking() {
                     super.onThinking();
+                    //Toast.makeText(LandingActivity.this, "Checking...", Toast.LENGTH_SHORT).show();
                 }
             });
         }
