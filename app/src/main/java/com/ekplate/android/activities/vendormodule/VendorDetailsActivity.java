@@ -1930,7 +1930,7 @@ public class VendorDetailsActivity extends BaseActivity implements BackgroundAct
                                         + " | "+ vendorAddress;
                    publish(dec);
             }*/
-                String dec = "I am checking in " + vendorName +
+                String dec = " I am eating at " + vendorName +" found it on Ekplate app https://www.facebook.com/ekplate2014"+
                         " | "+ vendorAddress;
                 publish(dec);
         }
@@ -1970,7 +1970,7 @@ public class VendorDetailsActivity extends BaseActivity implements BackgroundAct
                                     + " | " + etShareFeeling.getText().toString() + " | Google Location: " +
                                     "http://maps.google.com/maps?q=loc:" + vendorLatitude + "," + vendorLongitude);*/
                 TweetComposer.Builder builder = new TweetComposer.Builder(VendorDetailsActivity.this)
-                        .text("I am checking in " + vendorName + " | " + vendorAddress
+                        .text(" I am eating at " + vendorName +" found it on Ekplate app https://www.facebook.com/ekplate2014"+" | " + vendorAddress
                                 + " | " + " | Google Location: " +
                                 "http://maps.google.com/maps?q=loc:" + vendorLatitude + "," + vendorLongitude);
                     builder.show();
