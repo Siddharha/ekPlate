@@ -75,7 +75,7 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
         getWindow().setBackgroundDrawable(null);
         getSupportActionBar().hide();
         initialize();
-        permission();
+
 
     }
 
@@ -91,6 +91,7 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
     protected void onResume() {
         super.onResume();
      // nextWork();
+        permission();
 
     }
 

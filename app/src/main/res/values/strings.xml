@@ -18,8 +18,8 @@
     <string name="fb_app_id">636521116501539</string>
 
     <!-- Google map credential -->
-   <!-- <string name="google_api_key">AIzaSyC7RWfUbINOrXz30cE1eymyYW5hNuACimI</string>-->
-    <string name="google_api_key">AIzaSyA2fXLC9y6MuQH8buYSxF 3N20b_oACKMyQ</string>
+    <string name="google_api_key">AIzaSyC7RWfUbINOrXz30cE1eymyYW5hNuACimI</string>
+  <!--  <string name="google_api_key">AIzaSyA2fXLC9y6MuQH8buYSxF 3N20b_oACKMyQ</string>-->
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
