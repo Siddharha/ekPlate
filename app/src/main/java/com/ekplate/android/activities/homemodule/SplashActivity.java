@@ -91,7 +91,17 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
     protected void onResume() {
         super.onResume();
      // nextWork();
-        permission();
+
+        if(_connection.isNetworkAvailable()){
+
+            if(_commonMethods.isGpsOn()) {
+                permission();
+            }else {
+                _commonMethods.getGpsActiveAlert().show();
+            }
+        }else {
+            _connection.getNetworkActiveAlert().show();
+        }
 
     }
 
@@ -371,11 +381,11 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
             }
             else {
                 if(_connection.isNetworkAvailable()) {
-                    if(_commonMethods.isGpsOn()) {
+                   // if(_commonMethods.isGpsOn()) {
                         setRequestParam();
-                    } else {
-                        _commonMethods.getGpsActiveAlert().show();
-                    }
+                   // } else {
+                     //   _commonMethods.getGpsActiveAlert().show();
+                  //  }
                 } else{
                     _connection.getNetworkActiveAlert().show();
                 }
@@ -385,11 +395,11 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
             }
         }else {
             if(_connection.isNetworkAvailable()) {
-                if(_commonMethods.isGpsOn()) {
+              //  if(_commonMethods.isGpsOn()) {
                     setRequestParam();
-                } else {
-                    _commonMethods.getGpsActiveAlert().show();
-                }
+               // } else {
+                   // _commonMethods.getGpsActiveAlert().show();
+              //  }
             } else{
                 _connection.getNetworkActiveAlert().show();
             }
