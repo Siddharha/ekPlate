@@ -18,11 +18,16 @@ public class NetworkConnectionCheck {
     }
 
     public boolean isNetworkAvailable(){
+
         ConnectivityManager connectivityManager = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = connectivityManager.getActiveNetworkInfo();
 
         return info != null && info.isConnectedOrConnecting();
+    }
+
+    public boolean isMobileDataOn(){
+        return (Settings.Secure.getInt(context.getContentResolver(), "mobile_data", 1) == 1);
     }
 
     public AlertDialog getNetworkActiveAlert(){

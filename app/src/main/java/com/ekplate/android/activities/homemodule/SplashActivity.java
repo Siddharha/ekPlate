@@ -92,7 +92,7 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
         super.onResume();
      // nextWork();
 
-        if(_connection.isNetworkAvailable()){
+        if(_connection.isNetworkAvailable()||_connection.isMobileDataOn()){
 
             if(_commonMethods.isGpsOn()) {
                 permission();
@@ -380,29 +380,29 @@ public class SplashActivity extends BaseActivity implements BackgroundActionInte
                 return;
             }
             else {
-                if(_connection.isNetworkAvailable()) {
+               // if(_connection.isNetworkAvailable()) {
                    // if(_commonMethods.isGpsOn()) {
                         setRequestParam();
                    // } else {
                      //   _commonMethods.getGpsActiveAlert().show();
                   //  }
-                } else{
+              /*  } else{
                     _connection.getNetworkActiveAlert().show();
-                }
+                }*/
 
                 EkplateApplication application = (EkplateApplication) getApplication();
                 mTracker = application.getDefaultTracker();
             }
         }else {
-            if(_connection.isNetworkAvailable()) {
+           // if(_connection.isNetworkAvailable()) {
               //  if(_commonMethods.isGpsOn()) {
                     setRequestParam();
                // } else {
                    // _commonMethods.getGpsActiveAlert().show();
               //  }
-            } else{
+           /* } else{
                 _connection.getNetworkActiveAlert().show();
-            }
+            }*/
 
             EkplateApplication application = (EkplateApplication) getApplication();
             mTracker = application.getDefaultTracker();
