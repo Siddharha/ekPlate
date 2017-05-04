@@ -343,7 +343,7 @@ public class HomeFragment extends Fragment {
 
     private void setUpViewPager(){
         homePagerAdapter = new HomePagerAdapter(getActivity().getSupportFragmentManager(),
-                getActivity(), 4);
+                getActivity(), 3);
         vpHomeSlidingItem.setAdapter(homePagerAdapter);
         vpHomeSlidingItem.setCurrentItem(1);
         vpHomeSlidingItem.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
