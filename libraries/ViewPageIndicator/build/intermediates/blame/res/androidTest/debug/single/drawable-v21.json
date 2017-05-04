@@ -4,6 +4,14 @@
         "source": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/siddhartha/.android/build-cache/14b37077313ae8f530346d065ff554ec3873d4d0/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/siddhartha/.android/build-cache/14b37077313ae8f530346d065ff554ec3873d4d0/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
         "merged": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_action_bar_item_background_material.xml",
         "source": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-v21/abc_action_bar_item_background_material.xml"
     }

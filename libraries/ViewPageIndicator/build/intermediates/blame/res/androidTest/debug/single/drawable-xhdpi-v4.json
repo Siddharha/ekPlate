@@ -8,8 +8,28 @@
         "source": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png"
     },
     {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png",
+        "source": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png",
+        "source": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png"
+    },
+    {
         "merged": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png",
         "source": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png",
+        "source": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png",
+        "source": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png",
+        "source": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png"
     },
     {
         "merged": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png",
@@ -22,5 +42,9 @@
     {
         "merged": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
         "source": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
+        "source": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
     }
 ]

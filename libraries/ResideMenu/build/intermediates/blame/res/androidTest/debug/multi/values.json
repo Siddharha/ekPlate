@@ -22,5 +22,29 @@
                 }
             }
         ]
+    },
+    {
+        "outputFile": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ResideMenu/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 399,
+                    "endColumn": 47,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ResideMenu/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 399,
+                        "endColumn": 47,
+                        "endOffset": 442
+                    }
+                }
+            }
+        ]
     }
 ]

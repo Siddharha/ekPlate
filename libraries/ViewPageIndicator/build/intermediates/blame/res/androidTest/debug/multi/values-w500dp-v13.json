@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "/home/siddhartha/.android/build-cache/14b37077313ae8f530346d065ff554ec3873d4d0/output/res/values-w500dp/values-w500dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 232,
+                        "endColumn": 54,
+                        "endOffset": 282
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
         "map": [
             {

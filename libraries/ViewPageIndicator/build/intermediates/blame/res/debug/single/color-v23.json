@@ -2,5 +2,9 @@
     {
         "merged": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
         "source": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/siddhartha/.android/build-cache/14b37077313ae8f530346d065ff554ec3873d4d0/output/res/color-v23/abc_color_highlight_material.xml"
     }
 ]

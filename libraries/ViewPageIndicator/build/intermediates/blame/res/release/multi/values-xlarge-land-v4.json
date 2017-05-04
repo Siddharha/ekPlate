@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "/home/siddhartha/Documents/android_projects/ekPlate/libraries/ViewPageIndicator/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "/home/siddhartha/.android/build-cache/14b37077313ae8f530346d065ff554ec3873d4d0/output/res/values-xlarge-land/values-xlarge-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 237,
+                        "endColumn": 63,
+                        "endOffset": 296
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/home/siddhartha/Documents/android_projects/jockies-ekplate_android-22bb28248623/libraries/ViewPageIndicator/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
         "map": [
             {

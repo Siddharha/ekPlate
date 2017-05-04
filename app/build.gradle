@@ -16,15 +16,15 @@ repositories {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.ekplate.android"
        // applicationId "com.ekplate.androiduat"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 10
-        versionName "1.10"
+        versionCode 11
+        versionName "1.11"
         multiDexEnabled true
         generatedDensities = []
     }
@@ -74,7 +74,7 @@ dependencies {
     compile 'com.kbeanie:image-chooser-library:1.5.8@aar'
     compile project(':libraries:ResideMenu')
     compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.2@aar') {
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
         transitive = true;
     }
     compile('com.twitter.sdk.android:twitter:1.12.1@aar') {

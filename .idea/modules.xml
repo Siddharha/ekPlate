@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/libraries/ResideMenu/ResideMenu.iml" filepath="$PROJECT_DIR$/libraries/ResideMenu/ResideMenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/ViewPageIndicator/ViewPageIndicator.iml" filepath="$PROJECT_DIR$/libraries/ViewPageIndicator/ViewPageIndicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ekPlate.iml" filepath="$PROJECT_DIR$/ekPlate.iml" />
       <module fileurl="file://$PROJECT_DIR$/jockies-ekplate_android-22bb28248623.iml" filepath="$PROJECT_DIR$/jockies-ekplate_android-22bb28248623.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
     </modules>

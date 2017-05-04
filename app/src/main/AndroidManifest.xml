@@ -288,7 +288,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="ff794dbb235c53ca6847c4f31dab5e055635be1f" />
+            android:value="2e89ea33d19899fc2dc00f50de4837b7332707ee" />
 
         <!--
       Optionally, register AnalyticsReceiver and AnalyticsService to support background
